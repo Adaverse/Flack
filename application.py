@@ -99,6 +99,7 @@ def typing_alert_handler(data):
 
 @socketio.on('remove-typing-alert')
 def remove_typing_alert_handler(data):
+	''' handler for typing alert ''' 
 	emit('received-remove-typing-alert', data, room = data['room'])
 
 if __name__ == "__main__":

@@ -219,11 +219,13 @@ msg.addEventListener('keyup', event => {
 	}
 })
 
+// event listener for user typing
 var current = false;
 document.querySelector('#user_message').addEventListener('input', () => {
 	current = true;
 })
 
+// alert message if user types something
 socket.on('receive-typing-alert', (data) => {
 	if (data.username === username){
 		document.querySelector('#typing-alert').innerHTML = '';
@@ -237,7 +239,8 @@ socket.on('received-remove-typing-alert', (data) => {
 	document.querySelector('#typing-alert').innerHTML = '';
 })
 
-function doSomething() {
+// checks if user is still typing or not
+function update() {
 	if( current ){
 		socket.emit('typing-alert', {
 			'username':username,
@@ -253,4 +256,5 @@ function doSomething() {
 	}
 }
 
-setInterval(doSomething, 1000); // Time in milliseconds
+// update the update function after every second
+setInterval(update, 1000); // Time in milliseconds

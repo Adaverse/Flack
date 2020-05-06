@@ -13,8 +13,6 @@ body {
 	font-size: 30px;
 	text-align: center;
 	margin:10px;
-/*	padding-top:20px;
-	padding-bottom: 10px;*/
 }
 
 .row {
@@ -28,7 +26,6 @@ body {
 }
 
 #main-section {
-/*	padding: 10px;*/
 	display: flex;
 	flex-wrap: wrap;	
 	width: 100vw;
