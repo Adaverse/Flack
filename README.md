@@ -1,2 +1,14 @@
-# Flack
-This app is a mimic of 'Slack' 
+### Display Name
+
+### Channel Creation
+
+### Channel List
+
+### Messages View
+
+### Sending Messages
+
+### Remembering the Channel
+
+### Personal Touch
+
